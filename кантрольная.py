@@ -92,49 +92,50 @@ if __name__ == "__main__":
             print("Неверная команда")
 
 
-# from PyQt5 import QtWidgets   
-# from PyQt5.QtWidgets import QApplication,QMainWindow,QMessageBox 
-# from PyQt5.QtCore import Qt,QTimer  
+
+# from PyQt5 import QtWidgets # type: ignore
+# from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit, QPushButton, QDateEdit, QTimeEdit # type: ignore
 # import sys
-# import datetime
+
+# class Window(QMainWindow):
+#     def __init__(self):
+#         super(Window, self).__init__()
+#         self.setWindowTitle("Программа")
+#         self.setGeometry(400, 400, 600, 300)
+
+#         self.text_date = QLabel("Выберите дату", self)
+#         self.text_date.move(10, 52)
+#         self.text_date.adjustSize()
+
+#         self.text_time = QLabel("Выберите время", self)
+#         self.text_time.move(10, 103)
+#         self.text_time.adjustSize()
+
+#         self.date = QDateEdit(self)
+#         self.date.move(100, 50)
+
+#         self.time = QTimeEdit(self)
+#         self.time.move(110, 100)
+
+#         self.sodati = QLineEdit(self)
+#         self.sodati.setGeometry(100, 150, 160, 30)
+#         self.sodati.setPlaceholderText("Введите событие")
+
+#         self.knopka = QPushButton("Готово", self)
+#         self.knopka.move(210, 80)
+#         self.knopka.clicked.connect(self.on_click)
+
+#     def on_click(self):
+#         # Действие при нажатии на кнопку
+#         print("Кнопка нажата")
+#         # Можно добавить логику для обработки ввода пользователем
+
 # def aplic():
-#     app=QApplication(sys.argv)
-#     okno=window()
+#     app = QApplication(sys.argv)
+#     okno = Window()
 #     okno.show()
 #     sys.exit(app.exec_())
-#     if __name__ == "__main__":
-#         aplic()
-#         class window(QMainWindow):
-#             def __init__(self):
-#                 super(window,self)._init_()
-#                 self.setWindowTitle("programs")
-#                 self.setGeometry(400,400,600,300)
-#                 self.text_date=QtWidgets.QLabel(self)
-#                 self.text_date.adjustSize()
-#                 self.text_date.move(10,52)
 
-#                 self.text_time=QtWidgets.QLabel(self)
-#                 self.text_time.setText("выберите время")
-#                 self.text_time.adjustSize()
-#                 self.text_time.move(10,103)
-
-#                 self.date=QtWidgets.QDateEdit(self)
-#                 self.date.move(100,50)
-#                 self.date.adjustSize()
-
-#                 self.time=QtWidgets.QTimeEdit(self)
-#                 self.time.move(110,100)
-#                 self.time.adjustSize()
-
-#                 self.sodati=QtWidgets.QLineEdit(self)
-#                 self.sodati.setGeometry(100,150,160,30)
-#                 self.sodati.adjustSize()
-#                 self.sodati.setPlaceholderText("введите событие")
-
-#                 self.knopka=QtWidgets.QPushButton(self)
-#                 self.knopka.move(210,80)
-#                 self.knopka.setText("готово")
-#                 self.knopka.adjustSize()
-
-
+# if __name__ == "__main__":
+#     aplic()
 
